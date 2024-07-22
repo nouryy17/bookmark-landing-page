@@ -10,3 +10,11 @@ function toggleActivClass(clickEle) {
     })
     clickEle.classList.add("activ")
 }
+let Question=document.querySelectorAll(".Questions  .boxs .box .Questions")
+let img=document.querySelectorAll(".Questions  .boxs .box .Questions img")
+
+Question.forEach(function (ele) {
+    ele.addEventListener("click",function () {
+       ele.parentElement.classList.toggle("activ")
+    })
+})

@@ -733,16 +733,23 @@ header nav .conect {
   overflow: hidden;
   height: 73px;
 }
+.Questions .boxs .box.activ {
+  height: fit-content;
+}
 @media (max-width: 767px) {
   .Questions .boxs .box {
     height: 50px;
   }
+}
+.Questions .boxs .box.activ .Questions img {
+  transform: rotateX(180deg);
 }
 .Questions .boxs .box .Questions {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
   align-items: center;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   .Questions .boxs .box .Questions {
