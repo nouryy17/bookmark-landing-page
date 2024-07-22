@@ -116,7 +116,7 @@ header
          padding-right: 40px
     @include for-size(tablet-landscape-up)
         flex-direction: column
-    
+        gap: 30px
     display: flex
     justify-content: space-between
     padding: 60px 0
@@ -285,6 +285,8 @@ header
               flex-direction: column
             .img
              position: relative  
+             padding: 20px
+
              @include for-size(tablet-landscape-up)
                 width: 100%
                 display: flex
@@ -305,7 +307,7 @@ header
                  @include  for-size(max-mobile)
                     content: ""
                     position: absolute
-                    width: 200px
+                    width: 122%
                     height: 136px
                     background-color:$Soft-Blue
                     top: 20%

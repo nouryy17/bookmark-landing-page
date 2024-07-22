@@ -194,6 +194,7 @@ header nav .conect {
 @media (max-width: 991px) {
   .Bookmark {
     flex-direction: column;
+    gap: 30px;
   }
 }
 @media (max-width: 767px) {
@@ -467,6 +468,7 @@ header nav .conect {
 }
 .Features .tow .info .img {
   position: relative;
+  padding: 20px;
 }
 @media (max-width: 991px) {
   .Features .tow .info .img {
@@ -496,7 +498,7 @@ header nav .conect {
   .Features .tow .info .img::after {
     content: "";
     position: absolute;
-    width: 200px;
+    width: 122%;
     height: 136px;
     background-color: hsl(231, 69%, 60%);
     top: 20%;
@@ -723,6 +725,7 @@ header nav .conect {
 @media (max-width: 767px) {
   .Questions .boxs {
     margin: 0;
+    width: -moz-fit-content;
     width: fit-content;
   }
 }
@@ -734,6 +737,7 @@ header nav .conect {
   height: 73px;
 }
 .Questions .boxs .box.activ {
+  height: -moz-fit-content;
   height: fit-content;
 }
 @media (max-width: 767px) {
@@ -785,6 +789,7 @@ header nav .conect {
   border: 2px solid transparent;
   cursor: pointer;
   margin: 20px auto;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .Questions .button:hover {
@@ -865,6 +870,7 @@ header nav .conect {
     margin-top: 10px;
     padding: 5px;
     font-size: 11px;
+    width: -moz-fit-content;
     width: fit-content;
     margin: auto;
   }
@@ -954,6 +960,4 @@ footer .icon {
 }
 footer .icon svg {
   cursor: pointer;
-}
-
-/*# sourceMappingURL=desing.css.map */
+}/*# sourceMappingURL=desing.css.map */
