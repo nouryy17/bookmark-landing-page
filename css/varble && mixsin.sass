@@ -1,0 +1,60 @@
+$tablet-width-Mobile: 375px
+$desktop-width-Desktop: 1440px
+/*  Colors */
+$Soft-Blue: hsl(231, 69%, 60%)
+$Soft-Red: hsl(0, 94%, 66%)
+$Grayish-Blue: hsl(229, 8%, 60%)
+$Very-Dark-Blue: hsl(229, 31%, 21%)
+$font-family: "Rubik"
+@mixin for-size($size) 
+    @if $size == phone-only 
+       @media (max-width: 375px) 
+        @content 
+    @else if $size == mobile-small 
+       @media (max-width: 480px) 
+        @content 
+    @else if $size == max-mobile 
+       @media (max-width: 767px) 
+        @content 
+    @else if $size == tablet-landscape-up 
+       @media (max-width: 991px) 
+        @content 
+    @else if $size == tablet-landscape-up 
+       @media (max-width: 1024px) 
+        @content 
+    @else if $size == desktop-up 
+       @media (max-width: 1200px)  
+        @content
+    @else if $size == big-desktop-up 
+       @media (min-width: 1600px) 
+        @content 
+
+@mixin for-phone-only
+  @media (max-width : $tablet-width-Mobile ) 
+     @content 
+
+@mixin for-desktop-up 
+  @media (min-width : $tablet-width-Mobile  ) 
+     @content
+
+
+@mixin button($color)
+  background-color: $color
+  color: white
+  border-radius: 4px
+  padding: 9px 23px
+  border: 2px solid transparent
+  cursor: pointer
+@mixin button-hover($color)
+  background-color: white
+  color: $color
+  border: 2px solid $color
+  box-shadow: 4px 6px 5px -1px #a9a9a9
+  transition: 0.5s
+ul
+  list-style: none
+a
+  text-decoration: none
+  color: $Very-Dark-Blue
+  opacity: 0.7
+
