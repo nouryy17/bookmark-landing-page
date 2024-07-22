@@ -191,6 +191,11 @@ header nav .conect {
     padding-right: 40px;
   }
 }
+@media (max-width: 991px) {
+  .Bookmark {
+    flex-direction: column;
+  }
+}
 @media (max-width: 767px) {
   .Bookmark {
     display: flex;
@@ -205,6 +210,12 @@ header nav .conect {
   .Bookmark .text {
     text-align: center;
     width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .Bookmark .text {
+    width: 100%;
+    text-align: center;
   }
 }
 .Bookmark .text h1 {
@@ -236,6 +247,11 @@ header nav .conect {
   .Bookmark .text .button {
     font-size: 14px;
     display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 991px) {
+  .Bookmark .text .button {
     justify-content: center;
   }
 }
@@ -286,6 +302,13 @@ header nav .conect {
 .Bookmark .img {
   position: relative;
 }
+@media (max-width: 991px) {
+  .Bookmark .img {
+    flex-basis: 100%;
+    justify-content: center;
+    display: flex;
+  }
+}
 .Bookmark .img::after {
   content: "";
   position: absolute;
@@ -296,6 +319,11 @@ header nav .conect {
   right: -40px;
   z-index: -1;
   border-radius: 103% 0 0 100%;
+}
+@media (max-width: 991px) {
+  .Bookmark .img::after {
+    top: 30%;
+  }
 }
 @media (max-width: 480px) {
   .Bookmark .img::after {
@@ -406,9 +434,7 @@ header nav .conect {
 .Features .tow .List li:hover {
   border-bottom: 2px solid hsl(0, 94%, 66%);
   color: hsl(0, 94%, 66%);
-  font-weight: 500;
   transition: 0.5;
-  padding: 10px 0px;
 }
 @media (max-width: 767px) {
   .Features .tow .List li {
@@ -426,6 +452,13 @@ header nav .conect {
   align-items: center;
   justify-content: space-evenly;
 }
+@media (max-width: 991px) {
+  .Features .tow .info {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+}
 @media (max-width: 767px) {
   .Features .tow .info {
     display: flex;
@@ -434,6 +467,13 @@ header nav .conect {
 }
 .Features .tow .info .img {
   position: relative;
+}
+@media (max-width: 991px) {
+  .Features .tow .info .img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 .Features .tow .info .img::after {
   content: "";
@@ -446,6 +486,11 @@ header nav .conect {
   z-index: -1;
   border-radius: 103% 0 0 100%;
   transform: rotateY(180deg);
+}
+@media (max-width: 991px) {
+  .Features .tow .info .img::after {
+    top: 25%;
+  }
 }
 @media (max-width: 767px) {
   .Features .tow .info .img::after {
@@ -629,6 +674,11 @@ header nav .conect {
     font-size: 12px;
     font-weight: 500;
     padding: 10px;
+  }
+}
+@media (max-width: 991px) {
+  .extension .tow .box button {
+    padding: 5px 13px;
   }
 }
 

@@ -114,6 +114,9 @@ header
     @include for-desktop-up
          padding-left: 40px
          padding-right: 40px
+    @include for-size(tablet-landscape-up)
+        flex-direction: column
+    
     display: flex
     justify-content: space-between
     padding: 60px 0
@@ -126,6 +129,10 @@ header
         @include for-size(max-mobile)
            text-align: center
            width: 100%
+        @include for-size(tablet-landscape-up)
+           width: 100%
+           text-align: center
+        
         h1
             font-size: 38px
             @include for-size(max-mobile)
@@ -146,6 +153,8 @@ header
                 font-size: 14px
                 display: flex
                 justify-content: center
+            @include for-size(tablet-landscape-up)
+                justify-content: center
             .one
                  @include button($Soft-Blue)
                  &:hover
@@ -163,7 +172,11 @@ header
                    padding: 4px
                    font-weight: 600
     .img
-        position: relative   
+        position: relative  
+        @include for-size(tablet-landscape-up)
+            flex-basis: 100%
+            justify-content: center
+            display: flex
         &::after
             content: ""
             position: absolute
@@ -174,6 +187,9 @@ header
             right: -40px
             z-index: -1
             border-radius: 103% 0 0 100%
+            @include for-size(tablet-landscape-up)
+               top: 30%
+               
             @include  for-size(mobile-small)
                content: ""
                position: absolute
@@ -247,9 +263,7 @@ header
                 &:hover
                    border-bottom: 2px solid $Soft-Red
                    color: $Soft-Red
-                   font-weight: 500
                    transition: 0.5
-                   padding: 10px 0px
                 @include for-size(max-mobile)
                    display: flex
                    justify-content: center
@@ -262,11 +276,19 @@ header
             gap: 73px
             align-items: center
             justify-content: space-evenly
+            @include for-size(tablet-landscape-up)
+                 flex-direction: column
+                 text-align: center
+                 gap: 30px
             @include for-size(max-mobile)
               display: flex
               flex-direction: column
             .img
-             position: relative   
+             position: relative  
+             @include for-size(tablet-landscape-up)
+                width: 100%
+                display: flex
+                justify-content: center
              &::after
                  content: ""
                  position: absolute
@@ -278,6 +300,8 @@ header
                  z-index: -1
                  border-radius: 103% 0 0 100%
                  transform: rotateY(180deg)
+                 @include for-size(tablet-landscape-up)
+                   top: 25%
                  @include  for-size(max-mobile)
                     content: ""
                     position: absolute
@@ -370,16 +394,11 @@ header
             @include for-size(max-mobile)
              width: 200px
              margin: auto
-             
-
-            
             img
                 width: 420px
                 margin: 20px 0
                 &:first-of-type
                   width: 50px
-
-                    
             p
                 color: $Grayish-Blue
                 margin: 10px 0
@@ -391,7 +410,9 @@ header
                 @include  for-size(max-mobile)
                     font-size: 12px
                     font-weight: 500
-                    padding: 10px               
+                    padding: 10px          
+                @include for-size(tablet-landscape-up)
+                    padding: 5px 13px     
 .Questions
     padding: 30px 0
     @include for-size(max-mobile)
